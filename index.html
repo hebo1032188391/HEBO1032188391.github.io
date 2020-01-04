@@ -13,8 +13,6 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  
   <meta name="description" content="">
   <meta name="author" content="heboo">
   <meta name="keywords" content="">
@@ -28,6 +26,8 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
 
 
+
+  <link rel="stylesheet" href="/blog/lib/prettify/tomorrow-night-eighties.min.css"  >
 
 <link rel="stylesheet" href="/blog/css/main.css"  >
 
@@ -43,7 +43,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/blog/">&nbsp;<strong>give more than you planned to</strong>&nbsp;</a>
+       href="/blog/">&nbsp;<strong>Hexo</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -107,7 +107,7 @@
 </nav>
 
     <div class="view intro-2" id="background"
-         style="background: url('/img/favorite.jpg')no-repeat center center;
+         style="background: url('/img/default.png')no-repeat center center;
            background-size: cover;
            background-attachment: fixed;">
       <div class="full-bg-img">
@@ -290,6 +290,14 @@ More info: Deployment
   
 
 
+
+  <script src="/blog/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
 
 
 
